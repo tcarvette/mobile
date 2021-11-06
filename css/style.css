@@ -2,9 +2,108 @@ html{
     scroll-behavior:smooth;
 }
 
-.galleryopics{
+main{
     display:grid;
     grid-template-columns:1fr;
-    align-self:auto;
+    background-color:#242582;
+    text-align:center;
+}
+
+nav li{
+    display:inline-flex;
+    padding-right:10px;
+    align-content:flex-end;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+nav a:hover{
+    color:#553D67;
+}
+
+nav{
+    background-color:#242582;
+    padding:5px;
+    text-align:center;
+}
+
+.skip a{
+    color:white;
+    font-weight:bold;
+    text-decoration:underline;
+
+    left:0;
+    padding:6px;
+    -webkit-transition:top 1s ease-out;
+    transition:top 1s ease-out;
+    z-index:1;
+
+    position:absolute;
+    top:-40px;
+}
+
+.skip:focus{
+    position:absolute;
+    top:10px;
+}
+
+.skip:hover{
+    color:#553D67;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:1fr;
+    justify-content:center;
+    align-items:auto;
     overflow:hidden;
+}
+
+.gallery > img{
+    border:10px solid white;
+    margin:10px;
+    width:300px;
+}
+
+h1{
+    text-align:center;
+    color:#F64C72;
+    font-weight:bold;
+    font-size:50px;
+}
+
+.container p{
+    text-align:center;
+    color:#F64C72;
+    font-size:25px;
+}
+
+h2{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-size:40px;
+}
+
+h3{
+    text-align:center;
+    color:#F64C72;
+    font-size:20px;
+}
+
+form{
+    text-align:center;
+    color:#F64C72;
+    font-weight:bold;
+    font-size:15px;
+}
+
+footer{
+    color:#F64C72;
+    padding:30px;
+    text-align:center;
 }
