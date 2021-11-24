@@ -107,3 +107,13 @@ footer{
     padding:30px;
     text-align:center;
 }
+
+/* Tablet View */
+@media all and (min-width: 850px) {
+    body{
+        display:grid;
+        grid-template-columns:1fr;
+        background-color:#242582;
+        text-align:center;
+    }
+}
